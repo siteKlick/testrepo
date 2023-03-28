@@ -1,0 +1,36 @@
+title: Text mit Hauptbild und Zusatzinfos
+icon: 📄
+navigation:
+  template: all
+status:
+  draft:
+    label: Entwurf
+    text: Diese Seite ist noch nicht veröffentlicht. Sie ist nur hier sichtbar.
+  listed:
+    label: Veröffentlicht
+    text: Diese Seite ist online auf deiner Website sichtbar.
+  unlisted:
+    label: Archiv
+    text: Diese Seite wurde archiviert und kann nur noch über einen direkten Link angesehen werden.
+columns:
+  text:
+    width: 2/3
+    fields:
+      headline:
+        label: Überschrift
+        type: text
+      text: 
+        label: Text
+        type: blocks
+        fieldsets:
+          text: custom/blocks/text-no-nodes-no-code
+          - list
+          - quote
+      infos: custom/fields/structure-link-download
+  photo:
+    width: 1/3
+    sections:
+      image:  
+        type: fields
+        fields:
+          imageMain: custom/fields/cover

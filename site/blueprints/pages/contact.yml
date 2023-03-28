@@ -1,0 +1,66 @@
+title: Kontakt
+icon: 📄
+navigation:
+  template: all
+status:
+  draft:
+    label: Entwurf
+    text: Diese Seite ist noch nicht veröffentlicht. Sie ist nur hier sichtbar.
+  listed:
+    label: Veröffentlicht
+    text: Diese Seite ist online auf deiner Website sichtbar.
+  unlisted:
+    label: Archiv
+    text: Diese Seite wurde archiviert und kann nur noch über einen direkten Link angesehen werden.
+columns:
+  text:
+    width: 2/3
+    fields:
+      headline:
+        label: Überschrift
+        type: text
+      text:
+        label: Text
+        type: writer
+      name:
+        label: Name
+        type: text
+      address:
+        label: Adresse
+        type: writer
+        marks: false
+        nodes: false
+      email:
+        label: Email
+        type: email
+      phoneLandline:
+        label: Festnetz
+        type: tel
+        width: 1/2
+      phoneMobile:
+        label: Mobil
+        type: tel
+        width: 1/2
+  photo:
+    width: 1/3
+    sections:
+      image:  
+        type: fields
+        fields:
+          imageMain:
+            label: Hauptbild der Seite
+            type: files
+            layout: cards
+            size: small
+            query: site.find("gallery")
+            uploads: 
+              parent: site.find("gallery")
+              template: gallery
+            max: 1
+            image:
+              ratio: 1/1
+
+
+
+  
+

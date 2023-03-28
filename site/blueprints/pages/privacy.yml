@@ -1,0 +1,18 @@
+title: Privacy
+icon: 📄
+status:
+  draft:
+    label: Entwurf
+    text: Diese Seite ist noch nicht veröffentlicht. Sie ist nur hier sichtbar.
+  unlisted:
+    label: Öffentlich
+    text: Diese Seite ist über einen direkten Link erreichbar, erscheint aber nicht im Menü.
+
+columns:
+  text:
+    width: 2/3
+    fields:
+      text: custom/fields/writer-no-code
+
+  
+

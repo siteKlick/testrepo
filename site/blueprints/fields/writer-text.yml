@@ -1,0 +1,6 @@
+type: writer
+nodes: false
+marks: 
+  - bold
+  - italic
+  - underline

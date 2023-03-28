@@ -1,0 +1,12 @@
+[submodule "kirby"]
+	path = kirby
+	url = https://github.com/getkirby/kirby.git
+[submodule "site/plugins/autoresize"]
+	path = site/plugins/autoresize
+	url = https://github.com/medienbaecker/kirby-autoresize
+[submodule "site/blueprints/custom"]
+	path = site/blueprints/custom
+	url = https://github.com/siteKlick/kirby-custom-blueprints.git
+[submodule "site/plugins/kirby-extended-writer"]
+	path = site/plugins/kirby-extended-writer
+	url = https://github.com/coralic/kirby-extended-writer.git

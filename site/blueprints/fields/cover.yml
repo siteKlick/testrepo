@@ -1,0 +1,12 @@
+type: files
+multiple: false
+query: page.getAllGalleries
+layout: cards
+image:
+  ratio: 4/3
+  back: white
+  cover: false
+uploads: false
+  # parent: site.find("gallery")
+  # template: image
+link: true

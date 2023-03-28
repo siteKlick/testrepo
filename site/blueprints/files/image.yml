@@ -1,0 +1,31 @@
+title: Image
+accept: 
+  type: image
+columns:
+  - width: 1/2
+    sections:
+      meta:
+        type: fields
+        fields:
+          alt:
+            label: Alternativer Text
+            type: text
+            required: true
+            help: Der alternative Text ist sehr wichtig um deine Website z.B. für Menschen mit Sehschwierigkeiten erfassbar zu machen. Außerdem wird deine Website bei den Google-Ergebnissen höher gelistet, wenn du für deine Fotos immer einen alternativen Text angibst.
+          source:
+            label: Bildquelle
+            type: text
+          link:
+            label: Link
+            type: url
+  - width: 1/2
+    sections:
+      sorting:
+        type: fields
+        fields:
+          tags:
+            label: Tags
+            type: tags
+          catpion:
+            label: Bildunterschrift
+            type: text

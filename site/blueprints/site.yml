@@ -1,0 +1,108 @@
+title: Site
+tabs:
+  start:
+    icon: page
+    columns:
+      pages:
+        width: 2/3
+        sections:
+          published:
+            type: pages
+            headline: Veröffentlichte Hauptseiten
+            layout: cards
+            templates:
+              - home
+              - text
+              - text-cover
+              - text-cover-infos
+              - subpages-text-cover-infos
+              - contact
+            create: false
+            image: 
+              query: page.imageMain.toFile
+              ratio: 1/1
+            sortBy: status desc num asc
+          drafts:
+            type: pages
+            headline: Entwürfe für neue Hauptseiten
+            status: draft
+            layout: cards
+            templates: 
+              - text-cover
+              - text-cover-infos
+              - subpages-text-cover-infos
+              - text
+              - contact
+          archive:
+            type: pages
+            headline: Archivierte Hauptseiten
+            status: unlisted
+            layout: cards
+            templates:
+              - text-cover
+              - text-cover-infos
+              - subpages-text-cover-infos
+              - text
+              - contact
+      more:
+        width: 1/3
+        sections:
+          more:
+            type: pages
+            headline: weitere Bereiche
+            layout: cards
+            templates: 
+              - gallery
+          privacy:
+            type: pages
+            headline: Rechtliches
+            layout: cards
+            size: tiny
+            templates:
+              - privacy
+  gallery: 
+    label: Galerie
+    sections: 
+      gallery: sections/gallery
+
+  writer:
+    label: Writer
+    columns:
+      main:
+        width: 2/3  
+        sections:
+          writer:
+            type: fields
+            fields:
+              writer1:
+                extends: custom/fields/writer-no-code
+                label: Writer No Code
+              writer2:
+                extends: custom/fields/writer-no-caps-no-code
+                label: Writer No Caps No Code
+              writer3:
+                extends: custom/fields/writer-no-nodes-no-code
+                label: Writer No Nodes No Code
+              writer4:
+                extends: custom/fields/writer-text-and-lists
+                label: Writer Only Text And Lists     
+      side:
+        width: 1/3
+        sections:
+          side:
+            type: fields
+            fields:
+              cover: custom/fields/cover
+          pages:
+            type: pages
+  blocks:
+    label: Blocks
+    columns:
+      main:
+        width: 2/3
+        sections:
+          blocks:
+            type: fields
+            fields:
+              block1:
+                extends: custom/fields/blocks-report

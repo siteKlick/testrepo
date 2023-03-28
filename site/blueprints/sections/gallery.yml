@@ -1,0 +1,6 @@
+type: files
+label: Galerie
+template: image
+layout: cards
+size: small
+parent: site.find('gallery')
